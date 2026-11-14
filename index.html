@@ -3,181 +3,69 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rubesh Suresh · iOS Engineer</title>
-<meta name="description" content="Rubesh Suresh, iOS engineer in Singapore: Swift, SwiftUI, UIKit and SpriteKit. Projects, experience and education.">
-<meta property="og:title" content="Rubesh Suresh · iOS Engineer">
-<meta property="og:description" content="iOS engineer in Singapore: Swift, SwiftUI, UIKit and SpriteKit.">
-<meta property="og:image" content="https://rubesh.dev/assets/towerforge.jpg">
+<title>rubesh s.</title>
+<meta name="description" content="Software engineering for Apple platforms, and agentic systems.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23111'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='-apple-system,Helvetica,Arial'>R</text></svg>">
 <style>
-  :root {
-    --bg: #ffffff; --fg: #111418; --muted: #5b6470; --line: #e6e8eb; --card: #f7f8fa;
-    --accent: #0a66c2; --chip: #eef1f5;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #0e1013; --fg: #eceff3; --muted: #9aa3ae; --line: #252a31; --card: #161a1f;
-            --accent: #6cb4ff; --chip: #1e242b; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg);
-         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  main { max-width: 880px; margin: 0 auto; padding: 56px 20px 72px; }
-  a { color: var(--accent); text-decoration: none; }
+  :root { --fg: #1a1a1a; --muted: #6b6b6b; --bg: #fffefa; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8e6e1; --muted: #9a978f; --bg: #141414; --link: #8ab4f8; } }
+  html { background: var(--bg); }
+  body { max-width: 640px; margin: 0 auto; padding: 56px 20px 72px; color: var(--fg);
+         font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+  h1 { font-size: 1.6em; font-weight: normal; margin: 0 0 4px; }
+  h2 { font-size: 1em; font-weight: bold; margin: 2.4em 0 0.6em; }
+  nav { color: var(--muted); margin-bottom: 2em; }
+  a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  h1 { font-size: 40px; line-height: 1.1; margin: 0 0 6px; letter-spacing: -0.02em; }
-  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);
-       margin: 48px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
-  h3 { font-size: 18px; margin: 0; }
-  .tagline { font-size: 19px; color: var(--muted); margin: 0 0 18px; }
-  .links { display: flex; flex-wrap: wrap; gap: 10px 18px; font-size: 15px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
-          display: flex; flex-direction: column; }
-  .card img { width: 100%; height: 190px; object-fit: contain; background: #fff; display: block; }
-  .card .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
-  .card p { margin: 0; color: var(--muted); font-size: 14.5px; }
-  .meta { font-size: 13px; color: var(--muted); }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
-  .chip { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-size: 12.5px; color: var(--fg); }
-  .row { display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
-  .row:last-child { border-bottom: 0; }
-  .row .when { color: var(--muted); font-size: 14px; white-space: nowrap; }
-  .row p { grid-column: 1 / -1; margin: 2px 0 0; color: var(--muted); font-size: 14.5px; }
-  ul.list { margin: 0; padding-left: 18px; }
-  ul.list li { margin: 6px 0; }
-  ul.list li span { color: var(--muted); }
-  .skills { display: grid; grid-template-columns: 170px 1fr; gap: 8px 16px; font-size: 15px; }
-  .skills b { font-weight: 600; }
-  footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
-  @media (max-width: 560px) {
-    main { padding-top: 36px; }
-    h1 { font-size: 32px; }
-    .row { grid-template-columns: 1fr; }
-    .skills { grid-template-columns: 1fr; gap: 2px; }
-    .skills b { margin-top: 8px; }
-  }
+  p { margin: 0 0 1em; }
+  dl { display: grid; grid-template-columns: max-content 1fr; column-gap: 1.4em; row-gap: 0.15em; margin: 0; }
+  dt { color: var(--muted); }
+  dd { margin: 0; }
+  dd span { white-space: nowrap; }
+  .gap { margin-top: 0.9em; }
+  @media (max-width: 480px) { body { font-size: 16px; padding-top: 36px; } dl { column-gap: 1em; } }
+  footer { margin-top: 3.5em; color: var(--muted); font-size: 0.85em; }
 </style>
 </head>
 <body>
-<main>
-
 <header>
-  <h1>Rubesh Suresh</h1>
-  <p class="tagline">iOS engineer · Swift, SwiftUI, UIKit, SpriteKit · Singapore</p>
-  <nav class="links">
-    <a href="https://github.com/sp4ce-cowboy">GitHub</a>
-    <a href="https://www.linkedin.com/in/rubesh-suresh/">LinkedIn</a>
-    <a href="mailto:rubesh1337@gmail.com">rubesh1337@gmail.com</a>
-    <a href="https://github.com/sp4ce-cowboy?tab=repositories&amp;q=topic%3Aportfolio">All project pages</a>
-  </nav>
+<h1>rubesh s.</h1>
+<nav><a href="https://github.com/sp4ce-cowboy">github</a> · <a href="https://www.linkedin.com/in/rubesh-suresh/">linkedin</a></nav>
 </header>
 
-<section>
-  <h2>iOS apps</h2>
-  <div class="grid">
-    <a class="card" href="https://github.com/sp4ce-cowboy/SpacePeggle">
-      <img src="assets/spacepeggle.jpg" alt="SpacePeggle gameplay on iPad">
-      <div class="body">
-        <h3>SpacePeggle · Comet Drop</h3>
-        <span class="meta">Individual · NUS CS3217 · On the App Store as Comet Drop</span>
-        <p>A native iPad physics game built from scratch: a protocol-oriented 2D physics engine, a game engine and a gesture-driven level editor.</p>
-        <div class="chips"><span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">UIKit</span><span class="chip">XCTest</span></div>
-        <span class="meta"><object><a href="https://apps.apple.com/app/id6833552919">Download on the App Store →</a></object></span>
-      </div>
-    </a>
-    <a class="card" href="https://github.com/sp4ce-cowboy/TowerForge">
-      <img src="assets/towerforge.jpg" alt="TowerForge gameplay on iPad">
-      <div class="body">
-        <h3>TowerForge</h3>
-        <span class="meta">Team of 4 · NUS CS3217 · 3rd prize, STePS 2024 · App Store: Tiny Frontline (in review)</span>
-        <p>A real-time multiplayer iPad tower-defence game on an entity-component system, with local and Firebase cloud persistence and CI.</p>
-        <div class="chips"><span class="chip">Swift</span><span class="chip">SpriteKit</span><span class="chip">Firebase</span><span class="chip">GitHub Actions</span></div>
-      </div>
-    </a>
-  </div>
-</section>
+<main>
+<p>hello! i&#x27;m rubesh</p>
+<p>i graduated with a bachelor&#x27;s degree in engineering (honours) from the national university of singapore. i did double majors in mechanical engineering and computer science with a specialization in robotics.</p>
+<p>i&#x27;m interested in software engineering for apple platforms, and agentic systems. i&#x27;m currently working on an agent constitution to facilitate autonomous inter-agent orchestration.</p>
 
-<section>
-  <h2>Experience</h2>
-  <div class="row">
-    <strong>Software Engineer · UnternehmerTUM MakerSpace</strong><span class="when">Feb – Jul 2025 · Munich</span>
-    <p>Built <a href="https://github.com/sp4ce-cowboy/makaber">Makaber</a>, a Python and FastAPI integration that syncs a CRM with a door-access system over REST APIs and webhooks, and <a href="https://github.com/sp4ce-cowboy/course-expiry">machine-permission automation</a>.</p>
-  </div>
-  <div class="row">
-    <strong>AI Software Engineer Intern · ST Engineering</strong><span class="when">Aug 2024 – Jan 2025 · Singapore</span>
-    <p><a href="https://github.com/sp4ce-cowboy/smart-digital-junction">Smart Digital Junction</a>: edge-AI traffic monitoring on Raspberry Pi 5 and Hailo-8, and an <a href="https://github.com/sp4ce-cowboy/natural-query-language">LLM text-to-SQL prototype</a>.</p>
-  </div>
-  <div class="row">
-    <strong>Software Engineer and Student Researcher · NUS CSSH</strong><span class="when">Aug 2024 – Jan 2025 · Singapore</span>
-    <p><a href="https://github.com/sp4ce-cowboy/nus-wayang-kulit">Digital Wayang Kulit</a>: an interactive 3D shadow puppet in the browser, with a research paper.</p>
-  </div>
-</section>
+<h2>my tech stack</h2>
+<dl>
+  <dt>languages</dt><dd><span><a href="https://github.com/sp4ce-cowboy/SpacePeggle/blob/main/ARCHITECTURE.md#6-the-physics-engine">Swift</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/makaber/blob/main/ARCHITECTURE.md#5-the-use-case-pipeline">Python</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/discrete-event-simulator/blob/013aa28a67f6bd67c64cfcd61fdc23a33f8f4f3a/99_FinalProject/Simulator.java#L142-L184">Java</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/PeerPrep/blob/3b54cadfac2e6dd515097c149c4705e9c1cc6734/peerprep/frontend/src/api/matchingApi.ts#L138-L195">TypeScript</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/nus-wayang-kulit/blob/7be6ad25921de924c9ddddfc21979f39225b28c5/src/common/InverseKinematics.js">JavaScript</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/computer-organisation/blob/main/mips-datapath-simulator/mips.c">C</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/robotic-system-design/blob/54daac50e1fe1d8af0c7f0010ea4dc71b6893996/src/ee3305_nav/src/planner.cpp#L175-L260">C++</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/computer-organisation#mips-assembly-and-c-labs">MIPS assembly</a>&nbsp;·</span> <span>Obj-C</span></dd>
+  <dt>apple</dt><dd><span><a href="https://github.com/sp4ce-cowboy/SpacePeggle/blob/main/ARCHITECTURE.md#3-app-structure">SwiftUI</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/TowerForge/blob/main/ARCHITECTURE.md#3-top-level-design">UIKit</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/TowerForge/blob/main/ARCHITECTURE.md#9-rendering">SpriteKit</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/SpacePeggle/blob/main/ARCHITECTURE.md#11-testing">XCTest</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/SpacePeggle/blob/main/SpacePeggle/.swiftlint.yml">SwiftLint</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/TowerForge/blob/main/.github/workflows/ios.yml">Xcode</a>&nbsp;·</span> <span><a href="https://apps.apple.com/app/id6833552919">App Store</a></span></dd>
+  <dt class="gap">frontend</dt><dd class="gap"><span><a href="https://github.com/sp4ce-cowboy/PeerPrep/blob/3b54cadfac2e6dd515097c149c4705e9c1cc6734/peerprep/frontend/src/views/MatchingServiceViews/MatchingServiceMainView.tsx#L5-L91">React</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/wanderminds/blob/fab9d975a66c29973dc4231b0daf19e0303a0051/wanderMinds/app/screens/ExplorerScreen.tsx#L173-L224">React Native</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/wanderminds/blob/fab9d975a66c29973dc4231b0daf19e0303a0051/wanderMinds/app.config.js">Expo</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/nus-wayang-kulit/blob/7be6ad25921de924c9ddddfc21979f39225b28c5/src/main.js#L101-L154">Three.js</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/nus-wayang-kulit/blob/7be6ad25921de924c9ddddfc21979f39225b28c5/src/package.json#L6-L13">Vite</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/tp/blob/52513265da923537713fc58a048d7f7741ee3fc6/src/main/java/unicash/ui/StatusBarFooter.java#L40-L70">JavaFX</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/sp4ce-cowboy.github.io/blob/main/index.html">HTML</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/PeerPrep/blob/3b54cadfac2e6dd515097c149c4705e9c1cc6734/peerprep/frontend/src/styles/App.css">CSS</a></span></dd>
+  <dt>backend</dt><dd><span><a href="https://github.com/sp4ce-cowboy/makaber/blob/main/ARCHITECTURE.md#4-layers">FastAPI</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/makaber/blob/main/ARCHITECTURE.md#3-domain-model">Pydantic</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/makaber/blob/main/ARCHITECTURE.md#2-system-context">Uvicorn</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/makaber/blob/main/ARCHITECTURE.md#12-staff-tooling">Flask</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/PeerPrep/blob/3b54cadfac2e6dd515097c149c4705e9c1cc6734/peerprep/backend/question-service/src/server.ts#L38-L44">Node.js</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/PeerPrep/blob/3b54cadfac2e6dd515097c149c4705e9c1cc6734/peerprep/backend/question-service/src/server.ts#L38-L44">Express</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/PeerPrep/blob/3b54cadfac2e6dd515097c149c4705e9c1cc6734/peerprep/backend/docker-compose.yaml#L38-L41">Docker</a></span></dd>
+  <dt>database</dt><dd><span><a href="https://github.com/sp4ce-cowboy/course-expiry/blob/main/ARCHITECTURE.md#4-data-model">SQL</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/course-expiry/blob/main/ARCHITECTURE.md#3-system-context">PostgreSQL</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/course-expiry/blob/main/ARCHITECTURE.md#4-data-model">SQLite</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/PeerPrep/blob/3b54cadfac2e6dd515097c149c4705e9c1cc6734/peerprep/backend/question-service/src/controllers/questionController.ts#L123-L135">MongoDB</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/PeerPrep/blob/main/ARCHITECTURE.md#5-matching">Redis</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/TowerForge/blob/main/ARCHITECTURE.md#7-storageapi-offline-first-progress">Firebase</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/dashBoard/blob/36c240ad9e0514e75006f436768333133055316d/main.py#L325-L349">pandas</a></span></dd>
+  <dt class="gap">testing</dt><dd class="gap"><span><a href="https://github.com/sp4ce-cowboy/tp/blob/52513265da923537713fc58a048d7f7741ee3fc6/src/test/java/unicash/testutil/UserInputBuilder.java">JUnit5</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/tp/blob/52513265da923537713fc58a048d7f7741ee3fc6/build.gradle#L6">JaCoCo</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/tp/blob/52513265da923537713fc58a048d7f7741ee3fc6/.github/workflows/gradle.yml#L43">Codecov</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/tp/blob/52513265da923537713fc58a048d7f7741ee3fc6/build.gradle#L19-L21">Checkstyle</a></span></dd>
+  <dt>tools</dt><dd><span><a href="https://github.com/sp4ce-cowboy/tp">Git</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/TowerForge/blob/main/.github/workflows/ios.yml">GitHub Actions</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv2.0.sh#L183-L345">Bash</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/ip/blob/master/build.gradle">Gradle</a>&nbsp;·</span> <span><a href="https://wakatime.com/@space_cowboy">IntelliJ IDEA</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/discrete-event-simulator#readme">Vim</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/artificial-consciousness/blob/main/Written%20Articles/Proposal.tex">LaTeX</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/makaber/blob/main/ARCHITECTURE.md#12-staff-tooling">PlantUML</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/discrete-event-simulator/tree/main/99_FinalProject/javadocs">Javadoc</a></span></dd>
+  <dt class="gap">ai &amp; vision</dt><dd class="gap"><span><a href="https://github.com/sp4ce-cowboy/AddamNet/blob/7c47efae85a2158621a294750ad775ef63fd990b/slam/visual_slam.py#L199-L243">OpenCV</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/AddamNet/blob/main/ARCHITECTURE.md#4-defect-detection-yolov8">YOLO</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/AddamNet/blob/7c47efae85a2158621a294750ad775ef63fd990b/slam/reconstruct_viewer.py#L69-L195">NumPy</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/natural-query-language/blob/626a70c4c86d0381546c51ad30493e2836447402/src/pgconnection.py#L267-L328">OpenAI</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/smart-digital-junction/blob/47e7df92e91134a99e2a8a3d308786f91635297a/scripts/modelcompiler.py">Hailo-8</a></span></dd>
+  <dt>robotics</dt><dd><span><a href="https://github.com/sp4ce-cowboy/robotic-system-design/blob/54daac50e1fe1d8af0c7f0010ea4dc71b6893996/src/ee3305_nav/src/controller.cpp#L139-L300">ROS 2</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/robotic-system-design/blob/main/ARCHITECTURE.md#2-system">Gazebo</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/AddamNet/blob/7c47efae85a2158621a294750ad775ef63fd990b/arduino/sensor_suite.ino">Arduino</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/AddamNet/blob/main/ARCHITECTURE.md#2-system-architecture">Raspberry Pi</a></span></dd>
+  <dt>engineering</dt><dd><span><a href="https://github.com/sp4ce-cowboy/autonomous-robot#design">Fusion 360</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/solidworks-cad#tutorial-3-roller-bracket">SolidWorks</a>&nbsp;·</span> <span>MATLAB&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/computer-organisation#circuits-in-logisim">Logisim</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/housing-system-dynamics/tree/main/models">Stella</a></span></dd>
+</dl>
 
-<section>
-  <h2>Selected projects</h2>
-  <div class="grid">
-    <a class="card" href="https://github.com/sp4ce-cowboy/AddamNet">
-      <img src="assets/addamnet.jpg" alt="AddamNet dashboard">
-      <div class="body">
-        <h3>AddamNet</h3>
-        <span class="meta">B.Eng dissertation · Grade A</span>
-        <p>Autonomous defect detection and mapping in pipeline networks: YOLOv8 on a Raspberry Pi, visual SLAM and a live dashboard.</p>
-        <div class="chips"><span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">FastAPI</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://github.com/sp4ce-cowboy/PeerPrep">
-      <img src="assets/peerprep.jpg" alt="PeerPrep collaborative editor">
-      <div class="body">
-        <h3>PeerPrep</h3>
-        <span class="meta">Team of 5 · NUS CS3219</span>
-        <p>A collaborative coding-interview platform: microservices, real-time matching and a shared editor.</p>
-        <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">Yjs</span></div>
-      </div>
-    </a>
-    <a class="card" href="https://github.com/sp4ce-cowboy/wanderminds">
-      <img src="assets/wanderminds.jpg" alt="wanderminds app screens">
-      <div class="body">
-        <h3>wanderminds</h3>
-        <span class="meta">Team of 4 · TUM.ai Makeathon 2025</span>
-        <p>An AI travel companion: it plans a short trip from where you stand, draws the route and narrates each stop.</p>
-        <div class="chips"><span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">OpenAI</span></div>
-      </div>
-    </a>
-  </div>
-  <ul class="list" style="margin-top:18px">
-    <li><a href="https://github.com/sp4ce-cowboy/artificial-consciousness">Artificial Consciousness</a> <span>· Bash chatbots that rewrite their own code at runtime; Tembusu College Best Work Prize</span></li>
-    <li><a href="https://github.com/sp4ce-cowboy/housing-system-dynamics">Singapore housing system dynamics</a> <span>· causal loops and a Stella simulation model of the housing market (team project)</span></li>
-    <li><a href="https://github.com/sp4ce-cowboy/robotic-system-design">ROS 2 navigation</a> <span>· A* planner and pure-pursuit controller in C++</span></li>
-    <li><a href="https://github.com/sp4ce-cowboy/tp">UniCa$h</a> <span>· a finance tracker in Java and JavaFX (team project)</span></li>
-    <li><a href="https://github.com/sp4ce-cowboy/discrete-event-simulator">Discrete Event Simulator</a> <span>· purely immutable Java, with hosted Javadocs</span></li>
-    <li><a href="https://github.com/sp4ce-cowboy?tab=repositories&amp;q=topic%3Aportfolio">More on GitHub</a> <span>· hackathons, robotics and hardware</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <b>Apple</b><span>Swift, SwiftUI, UIKit, SpriteKit, Foundation, Codable, AVFoundation, XCTest, Xcode</span>
-    <b>Architecture</b><span>MVVM, protocol-oriented programming, entity-component systems, design patterns</span>
-    <b>Backend and APIs</b><span>Firebase, REST APIs, webhooks, WebSockets, FastAPI, Node.js</span>
-    <b>Tooling</b><span>Git, GitHub Actions CI, SwiftLint</span>
-    <b>Other languages</b><span>Python, Java, TypeScript, C/C++, Bash, SQL</span>
-  </div>
-</section>
-
-<section>
-  <h2>Education</h2>
-  <div class="row">
-    <strong>National University of Singapore</strong><span class="when">2022 – 2026</span>
-    <p>B.Eng (Hons) Mechanical Engineering, Second Major in Computer Science. Dissertation: <a href="https://github.com/sp4ce-cowboy/AddamNet">AddamNet</a>, grade A.</p>
-  </div>
-  <div class="row">
-    <strong>Technical University of Munich</strong><span class="when">2025</span>
-    <p>NUS Overseas Colleges programme: entrepreneurship courses and a software engineering role in Munich.</p>
-  </div>
-</section>
-
-<footer>© 2026 Rubesh Suresh</footer>
+<h2>my projects</h2>
+<dl>
+  <dt>apple</dt><dd><span><a href="https://github.com/sp4ce-cowboy/TowerForge">TowerForge</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/SpacePeggle">Space Peggle</a></span></dd>
+  <dt>work</dt><dd><span><a href="https://github.com/sp4ce-cowboy/course-expiry">Course Expiry</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/makaber">Makaber</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/nus-wayang-kulit">Wayang Kulit</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/smart-digital-junction">Smart Digital Junction</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/natural-query-language">Natural Query Language</a></span></dd>
+  <dt>research</dt><dd><span><a href="https://github.com/sp4ce-cowboy/AddamNet">AddamNet</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/nus-wayang-kulit">Wayang Kulit</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/artificial-consciousness">Artificial Consciousness</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/OceanX">OceanX</a></span></dd>
+  <dt>hackathons</dt><dd><span><a href="https://github.com/sp4ce-cowboy/wanderminds">wanderminds</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/cruel-maps">Cruel Maps</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/medibit">Medibit</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/AquAlarm">AquAlarm</a></span></dd>
+  <dt>awards</dt><dd><span><a href="https://github.com/sp4ce-cowboy/TowerForge">TowerForge</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/artificial-consciousness">Artificial Consciousness</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/medibit">Medibit</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/OceanX">OceanX</a></span></dd>
+  <dt class="gap">coursework</dt><dd class="gap"><span><a href="https://github.com/sp4ce-cowboy/PeerPrep">PeerPrep</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/TowerForge">TowerForge</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/SpacePeggle">Space Peggle</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/tp">UniCa$h</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/ip">ChatterBox</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/discrete-event-simulator">Discrete Event Simulator</a></span></dd>
+  <dt>systems</dt><dd><span><a href="https://github.com/sp4ce-cowboy/operating-systems">Operating Systems</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/computer-organisation">Computer Organisation</a></span></dd>
+  <dt>engineering</dt><dd><span><a href="https://github.com/sp4ce-cowboy/robotic-system-design">Robotic System Design</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/housing-system-dynamics">Housing System Dynamics</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/solidworks-cad">SolidWorks CAD</a>&nbsp;·</span> <span><a href="https://github.com/sp4ce-cowboy/autonomous-robot">Autonomous Robot</a></span></dd>
+  <dt>personal</dt><dd><span><a href="https://github.com/sp4ce-cowboy/dashBoard">dashBoard</a></span></dd>
+</dl>
 </main>
+
+<footer>updated 14 nov 2026 · <a href="https://github.com/sp4ce-cowboy/sp4ce-cowboy.github.io">source</a></footer>
 </body>
 </html>
