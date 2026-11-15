@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>timeline · rubesh s.</title>
+<meta name="description" content="Everything I've built and worked on, newest first.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23111'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='-apple-system,Helvetica,Arial'>R</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; max-width: 600px; margin: 40px auto; padding: 0 10px; }
+  h1 { font-size: 1.5em; font-weight: 500; line-height: 1.5em; padding-top: 2em; }
+  p { font-size: 0.875em; line-height: 1.5; }
+  strong { font-weight: 600; }
+  a { color: #444; text-decoration: none; }
+  a:hover { color: #000; }
+  a:focus { outline: 2px solid #444; outline-offset: 2px; }
+  nav { text-align: right; font-size: 0.875em; }
+  nav a { margin-left: 1.25em; }
+  nav a[aria-current] { color: #000; font-weight: 600; }
+
+  .timeline { position: relative; margin: 2.5em 0 4em; padding-left: 30px; }
+  .timeline::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 1px; background: #000; }
+  .year { position: relative; font-size: 0.875em; font-weight: 600; line-height: 1.5; margin: 2.2em 0 0.9em; }
+  .year:first-child { margin-top: 0; }
+  .year::before { content: ""; position: absolute; left: -30px; top: 3px; width: 13px; height: 13px; border-radius: 50%; background: #000; }
+  .item { position: relative; margin: 0 0 12px; }
+  .dot { position: absolute; left: -28.5px; top: 15px; width: 7px; height: 7px; border-radius: 50%; background: #fff; border: 1.5px solid #000; }
+  .work .dot { background: #000; }
+  .card { display: block; border: 1px solid #e5e5e5; border-radius: 8px; padding: 10px 14px; font-size: 0.875em; line-height: 1.5; color: #000; }
+  .card:hover { border-color: #999; color: #000; }
+  .when { display: block; font-size: 0.857em; color: #777; }
+  .name { display: block; font-weight: 600; }
+  .text { display: block; color: #444; }
+</style>
+</head>
+<body>
+<nav><a href="/">home</a><a href="/what-i-know/">what i know</a><a href="/timeline/" aria-current="page">timeline</a></nav>
+
+<h1>timeline</h1>
+
+<p><strong>everything i've built and worked on, newest first</strong></p>
+
+<div class="timeline">
+<div class="year">2026</div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/AddamNet"><span class="when">aug 2025 – apr 2026 · research</span><span class="name">addamnet</span><span class="text">autonomous defect detection and 3d mapping inside underground waste pipes.</span></a></div>
+<div class="year">2025</div>
+<div class="item work"><span class="dot"></span><a class="card" href="https://www.maker-space.de/"><span class="when">feb – jul 2025 · work</span><span class="name">software engineering intern at unternehmertum makerspace</span><span class="text">built and ran python automation linking the makerspace&#x27;s member system, its door access and its machine permissions.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/course-expiry"><span class="when">may – jul 2025 · work</span><span class="name">course expiry</span><span class="text">machine permissions that expire, warn and revoke themselves.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/makaber"><span class="when">feb – jul 2025 · work</span><span class="name">makaber</span><span class="text">customers created in the crm open the right doors on their own.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/wanderminds"><span class="when">apr 2025 · hackathon</span><span class="name">wanderminds</span><span class="text">exploration reimagined, one adventure at a time.</span></a></div>
+<div class="item work"><span class="dot"></span><a class="card" href="https://fass.nus.edu.sg/cssh/"><span class="when">aug 2024 – feb 2025 · work</span><span class="name">research assistant at the nus centre for computational social science and humanities</span><span class="text">built an interactive 3d wayang kulit shadow puppet in three.js for a cultural-heritage project.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/nus-wayang-kulit"><span class="when">aug 2024 – feb 2025 · work · research</span><span class="name">wayang kulit</span><span class="text">a shadow-puppet show in the browser, with the puppet&#x27;s arm following your hand.</span></a></div>
+<div class="item work"><span class="dot"></span><a class="card" href="https://www.stengg.com/"><span class="when">aug 2024 – jan 2025 · work</span><span class="name">software engineering intern at st engineering</span><span class="text">built an edge-ai proof of concept: real-time traffic analytics with yolo on a raspberry pi 5 and a hailo-8 accelerator.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/smart-digital-junction"><span class="when">aug 2024 – jan 2025 · work</span><span class="name">smart digital junction</span><span class="text">real-time vehicle detection, tracking and speed estimation on a $300, 5 w edge device.</span></a></div>
+<div class="year">2024</div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/natural-query-language"><span class="when">sep – dec 2024 · work</span><span class="name">natural query language</span><span class="text">ask a database a question in plain english, and get the sql and the answer.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/robotic-system-design"><span class="when">oct – nov 2024 · engineering</span><span class="name">robotic system design</span><span class="text">a mobile robot that plans its own path and follows it, in ros 2.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/PeerPrep"><span class="when">aug – nov 2024 · coursework</span><span class="name">peerprep</span><span class="text">technical-interview practice with a stranger, in real time.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/operating-systems"><span class="when">aug – nov 2024 · systems</span><span class="name">operating systems</span><span class="text">processes, synchronisation and memory allocation in c.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/TowerForge"><span class="when">mar – apr 2024 · apple · award · coursework</span><span class="name">towerforge</span><span class="text">a real-time multiplayer tower-defence game for ipad, built in swift with spritekit and firebase.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/SpacePeggle"><span class="when">jan – mar 2024 · apple · coursework</span><span class="name">space peggle</span><span class="text">a peggle-style physics game for ipad, built from scratch in swift and swiftui.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/cruel-maps"><span class="when">jan 2024 · hackathon</span><span class="name">cruel maps</span><span class="text">a maps app that routes you past the creepiest places on the way.</span></a></div>
+<div class="year">2023</div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/artificial-consciousness"><span class="when">oct – nov 2023 · research · award</span><span class="name">artificial consciousness</span><span class="text">two chatbots that feel pain, remember it, and rewrite their own code because of it.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/housing-system-dynamics"><span class="when">oct – nov 2023 · engineering</span><span class="name">housing system dynamics</span><span class="text">why do first-time buyers in singapore keep facing higher housing prices?</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/tp"><span class="when">sep – nov 2023 · coursework</span><span class="name">unica$h</span><span class="text">personal finance tracking for university students, from the keyboard.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/computer-organisation"><span class="when">aug – nov 2023 · systems</span><span class="name">computer organisation</span><span class="text">a single-cycle mips processor written in c, and digital circuits in logisim.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/solidworks-cad"><span class="when">aug – nov 2023 · engineering</span><span class="name">solidworks cad</span><span class="text">3d parts, fully constrained assemblies and engineering drawings in solidworks.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/ip"><span class="when">aug – oct 2023 · coursework</span><span class="name">chatterbox</span><span class="text">a keyboard-first task manager with a chat-style javafx window.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/discrete-event-simulator"><span class="when">feb – mar 2023 · coursework</span><span class="name">discrete event simulator</span><span class="text">a shop simulation in purely immutable java: customers, servers who take breaks, self-checkouts and queues.</span></a></div>
+<div class="year">2022</div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/dashBoard"><span class="when">dec 2022 · personal</span><span class="name">dashboard</span><span class="text">your whole life as a scoreboard: weighted &quot;directives&quot; in a csv, and one number for how intact things are.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/autonomous-robot"><span class="when">aug – nov 2022 · engineering</span><span class="name">autonomous robot</span><span class="text">a four-wheeled robot that crosses an obstacle course on its own and lobs a ping-pong ball over a wall.</span></a></div>
+<div class="year">2019</div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/medibit"><span class="when">2019 · hackathon · award</span><span class="name">medibit</span><span class="text">an automatic pill dispenser that helps elderly people take the right medicine on time.</span></a></div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/AquAlarm"><span class="when">jan 2019 · hackathon</span><span class="name">aqualarm</span><span class="text">an alarm clock that sprays water in your face if you don&#x27;t wake up.</span></a></div>
+<div class="year">2016</div>
+<div class="item project"><span class="dot"></span><a class="card" href="https://github.com/sp4ce-cowboy/OceanX"><span class="when">2016 · research · award</span><span class="name">oceanx</span><span class="text">an underwater robot that checks a pond&#x27;s water for the conditions behind algal blooms.</span></a></div>
+</div>
+</body>
+</html>
